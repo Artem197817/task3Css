@@ -149,11 +149,13 @@ body {
 .order-container-item {
     display: inline-block;
     vertical-align: middle;
-    padding: 10px 0 15px 0;
+    padding: 5px 0 10px 0;
     width: 282px;
     margin: 12px;
     background: #ffffff;
     text-align: center;
+    border: 5px solid #ffffff;
+    box-sizing: border-box;
 }
 
 .order-container-item:hover {
@@ -163,14 +165,10 @@ body {
 
 .order-container .order-container-item:first-child {
     border: 5px solid rgb(237, 155, 0);
-    box-sizing: border-box;
-    padding: 5px 0 10px 0;
 }
 
 .order-container .order-container-item:last-child {
     border: 5px solid rgb(237, 155, 0);
-    box-sizing: border-box;
-    padding: 5px 0 10px 0;
 }
 
 .order-container-item-image {
@@ -271,9 +269,18 @@ body {
 .cook-info-link-container:hover {
     box-shadow: 0 0 6px 4px rgba(255, 255, 255, 0.5);
 }
+.cook-info-link-container:active {
+    background-color: rgb(255, 175, 24);
+}
+.cook-info-link:visited .cook-info-link-container {
+    background-color: rgb(190, 190, 190);
+}
 
 .cook-image {
     margin-left: 48px;
+}
+footer{
+    background-color: rgb(0, 0, 0);
 }
 
 footer .container {
